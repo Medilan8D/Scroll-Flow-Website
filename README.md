@@ -6,6 +6,6 @@
 
 **home.html**: The homepage of the project, titled "INFINITE SCROLL," introduces visitors to modern web technologies and best practices. It highlights key features such as innovative design, cutting-edge technology, and community support.
 
-**new.html**: This file serves as an image gallery page with a navigation taskbar linking to the home, about, and contact pages. It implements infinite scrolling and asynchronous image loading using JavaScript, allowing users to view images dynamically.
+**index.html**: This file serves as an image gallery page with a navigation taskbar linking to the home, about, and contact pages. It implements infinite scrolling and asynchronous image loading using JavaScript, allowing users to view images dynamically.
 
 

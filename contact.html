@@ -1,92 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Details</title>
-    <style>
-        body {
-            background-color: #f5d3a1; /* Soft background color */
-            font-family: Arial, sans-serif; /* Modern font choice */
-            color: #333; /* Dark text color for contrast */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+import React from 'react';
+import Navbar from '../components/Navbar';
 
-        h1 {
-            text-align: center;
-            font-size: 28px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        table {
-            width: 70%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-            border-radius: 8px; /* Rounded corners */
-            overflow: hidden;
-        }
-
-        th, td {
-            padding: 12px 20px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #333;
-            color: #fff;
-            font-weight: bold;
-            text-transform: uppercase; /* Uppercase header text */
-            letter-spacing: 1px; /* Space between letters */
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9; /* Alternate row background */
-        }
-
-        tr:hover {
-            background-color: #f1f1f1; /* Hover effect */
-        }
-
-        td {
-            font-size: 16px;
-            color: #555; /* Slightly lighter text color */
-        }
-
-        td:first-child {
-            font-weight: bold; /* Bold student names */
-        }
-    </style>
-</head>
-<body>
-    <div>
-        <h1>GROUP NUMBER: 11</h1>
-        <h1><b><i><u>Details of the Students</u></i></b></h1>
+const DetailsPage = () => {
+  return (
+    <div className="bg-gradient-to-br from-gray-50 to-gray-100 text-[#333] min-h-screen">
+      <Navbar />
+      <div className="pt-20 px-5 flex flex-col items-center">
+        <h1 className="text-2xl font-bold text-center mb-3 text-gray-800">GROUP NUMBER: 11</h1>
+        <h1 className="text-2xl font-bold italic underline text-center mb-6 text-gray-800">Details of the Students</h1>
         
-        <table>
-            <tr>
-                <th>Name</th><th>Roll No.</th><th>Branch</th><th>Section</th>
-            </tr>
-            <tr>
-                <td>Anurag Tiwari</td><td>2201331520040</td><td>AI</td><td>B</td>
-            </tr>
-            <tr>
-                <td>Anushika Chauhan</td><td>2201331520041</td><td>AI</td><td>A</td>
-            </tr>
-            <tr>
-                <td>Anushka Baranwal</td><td>2201331520042</td><td>AI</td><td>A</td>
-            </tr>
-            <tr>
-                <td>Aradhya Sharma</td><td>2201331520043</td><td>AI</td><td>A</td>
-            </tr>
-        </table>
+        <div className="overflow-x-auto w-full max-w-4xl">
+          <table className="w-full bg-white shadow-md rounded-lg overflow-hidden">
+            <thead>
+              <tr>
+                <th className="py-3 px-5 bg-gray-800 text-white uppercase tracking-wider text-center">Name</th>
+                <th className="py-3 px-5 bg-gray-800 text-white uppercase tracking-wider text-center">Roll No.</th>
+                <th className="py-3 px-5 bg-gray-800 text-white uppercase tracking-wider text-center">Branch</th>
+                <th className="py-3 px-5 bg-gray-800 text-white uppercase tracking-wider text-center">Section</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="hover:bg-gray-100">
+                <td className="py-3 px-5 border-b border-gray-200 font-bold text-gray-700 text-center">Anurag Tiwari</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">2201331520040</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">AI</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">B</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="py-3 px-5 border-b border-gray-200 font-bold text-gray-700 text-center">Anushika Chauhan</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">2201331520041</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">AI</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">A</td>
+              </tr>
+              <tr className="hover:bg-gray-100">
+                <td className="py-3 px-5 border-b border-gray-200 font-bold text-gray-700 text-center">Anushka Baranwal</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">2201331520042</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">AI</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">A</td>
+              </tr>
+              <tr className="bg-gray-50 hover:bg-gray-100">
+                <td className="py-3 px-5 border-b border-gray-200 font-bold text-gray-700 text-center">Aradhya Sharma</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">2201331520043</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">AI</td>
+                <td className="py-3 px-5 border-b border-gray-200 text-gray-700 text-center">A</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
-</body>
-</html>
+  );
+};

@@ -1,49 +1,22 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
-
-const AboutPage = () => {
-  return (
-    <div className="bg-gradient-to-br from-gray-50 to-gray-100 text-[#333] min-h-screen">
-      <Navbar />
-      <div className="pt-20 px-5 flex justify-center items-center">
-        <div className="w-full max-w-4xl">
-          <h1 className="text-4xl font-bold text-center mb-5 text-gray-800 italic underline">
-            About Page
-          </h1>
-          
-          <div className="space-y-6">
-            <p className="text-lg bg-white/80 p-5 rounded-lg shadow-md first-letter-effect">
-              Welcome to the <strong>About Page</strong> of our project. This project showcases a modern web application that demonstrates the use of various web technologies to create a seamless and responsive user experience. The focus is on delivering an intuitive interface that adapts to different screen sizes and provides interactive features.
-            </p>
-            
-            <p className="text-lg bg-white/80 p-5 rounded-lg shadow-md first-letter-effect">
-              The core functionality of this application revolves around an <strong>image gallery</strong> that leverages asynchronous programming to dynamically load images. The gallery includes a taskbar for easy navigation, infinite scroll functionality to enhance user engagement, and a full-screen view feature to provide an immersive browsing experience.
-            </p>
-            
-            <div className="text-lg bg-white/80 p-5 rounded-lg shadow-md">
-              <p className="mb-3 first-letter-effect">
-                This project exemplifies modern web development practices, including:
-              </p>
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>HTML5</strong> for semantic and structured content.</li>
-                <li><strong>CSS3</strong> for styling, including Flexbox for layout and responsive design principles.</li>
-                <li><strong>JavaScript</strong> for interactivity, including event-driven programming and the Fetch API for asynchronous data loading.</li>
-                <li><strong>React</strong> for component-based UI development and efficient DOM manipulation.</li>
-              </ul>
-            </div>
-            
-            <p className="text-lg bg-white/80 p-5 rounded-lg shadow-md first-letter-effect">
-              The application is designed with a focus on <strong>usability</strong> and <strong>performance</strong>. Whether you are exploring images on a desktop or a mobile device, the user experience remains consistent and enjoyable.
-            </p>
-            
-            <p className="text-lg bg-white/80 p-5 rounded-lg shadow-md first-letter-effect">
-              We are continually working to enhance the functionality and aesthetics of this project. Stay tuned for more updates and features!
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default AboutPage;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Flow</title>
+    <meta name="description" content="A modern React website with beautiful design" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <meta property="og:title" content="Modern React Website" />
+    <meta property="og:description" content="A modern React website with beautiful design" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
